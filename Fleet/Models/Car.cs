@@ -79,7 +79,7 @@ namespace Fleet.Models
 
         public override string ToString()
         {
-            return "Make: " + Make + "| Model: " + Model + " | Gender: " + Registration + " | Engine Size: " + EngineSize;
+            return "Make: " + Make + "| Model: " + Model + " | Registration: " + Registration + " | Engine Size: " + EngineSize;
         }
 
     }
