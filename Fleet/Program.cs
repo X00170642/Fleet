@@ -56,15 +56,10 @@ namespace Fleet.Models
             }
 
 
-            var less1600Query = CarList
-                .Where(Car => Car.EngineSize < 1600);
+            int carsCount = CarList
+                .Where(Car => Car.EngineSize < 1600).Count();
 
-            var x = 0;
-            foreach (Car Details in EngineSize1600Query)
-            {
-                x += 1;
-            }
-            Console.WriteLine("Number of cars with engine size less than 1600cc is: " + x);
+            Console.WriteLine("Number of cars with engine size less than 1600cc is: " + carsCount);
 
 
         }
